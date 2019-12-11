@@ -1,4 +1,5 @@
 import React from "react";
+import SearchBar from "./SearchBar.jsx";
 
 class App extends React.Component {
   constructor(props) {
@@ -7,7 +8,12 @@ class App extends React.Component {
   }
 
   render() {
-    return <div>Hello World!</div>;
+    return (
+      <div>
+        <h1>Music Player</h1>
+        <SearchBar />
+      </div>
+    );
   }
 }
 

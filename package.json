@@ -1,0 +1,31 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Eric Luu",
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm dist/bundle.js",
+    "react-dev": "webpack -d --mode development --watch",
+    "server-dev": "nodemon server/index.js",
+    "build-prod": "webpack -p --mode production"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0"
+  }
+}
